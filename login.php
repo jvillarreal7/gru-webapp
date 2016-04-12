@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	if($count == 1)
 	{
 		$_SESSION['login_admin'] = $myusername;
-		header("location: http://localhost/clogin/admin/");
+		header("location: http://localhost/gru-webapp/admin/");
 	}
 }
 ?>
@@ -46,9 +46,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
       <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Inicie sesión</h2>
         <label for="inputEmail" class="sr-only">Correo institucional</label>
-        <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Correo institucional" required autofocus>
         <label for="inputPassword" class="sr-only">Contraseña</label>
-        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Recuérdame
