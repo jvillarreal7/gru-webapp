@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Dashboard</title>
+    <title>GRU Main Menu</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,27 @@
         padding: 40px 15px;
         text-align: center;
       }
+      .dropdown-menu {
+        left: 50%;
+        right: auto;
+        text-align: center;
+        transform: translate(-50%, 0);
+      }
+            .modal-dialog {
+        height: 80% !important;
+        padding-top:10%;
+      }
+
+      .modal-content {
+        height: 100% !important;
+        overflow:visible;
+      }
+
+      .modal-body {
+        height: 80%;
+        overflow: auto;
+      }
+
     </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -56,9 +77,88 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Dashboard</h1>
-        <p class="lead">En construcción</p>
-      </div>
+<div class="dropdown">
+    <button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown">Seleccione la entidad <span class="caret"></span>
+
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#sistemas" data-toggle="modal">Facultad de Sistemas</a>
+        <li><a href="#arq" data-toggle="modal">Facultad de Arquitectura</a>
+        <li><a href="#ingcivil" data-toggle="modal">Facultad de Ingeniería Civil</a>
+        <li><a href="#artes" data-toggle="modal">Escuela de Artes Plásticas</a>
+        <li><a href="#infoteca" data-toggle="modal">Infoteca Campus Arteaga</a>
+
+        </li>
+    </ul>
+</div>
+<div class="modal fade" id="sistemas" data-target="#sistemas">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header orange">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title"><strong></strong>Test 1</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="arq" data-target="#arq">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header orange">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title"><strong></strong>Test 2</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ingcivil" data-target="#ingcivil">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header orange">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title"><strong></strong>Test 3</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="artes" data-target="#artes">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header orange">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title"><strong></strong>Test 4</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="infoteca" data-target="#infoteca">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header orange">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title"><strong></strong>Test 5</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
 
     </div><!-- /.container -->
 
